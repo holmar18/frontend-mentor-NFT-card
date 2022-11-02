@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
+// Components
+import { GlobalStyle } from './components/GlobalStyle';
+// Features
+import { NftCard } from './feature/NftCard';
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'></header>
-		</div>
+		<>
+			<GlobalStyle />
+			<NftCard />
+		</>
 	);
 }
 
