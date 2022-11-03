@@ -1,2 +1,2 @@
-import Image from './Image';
-export { Image };
+import StyledImage from './Image.style';
+export { StyledImage };

@@ -1,15 +1,15 @@
-import React from 'react';
+import { FunctionComponent } from 'react';
 
-interface ICard {
+interface IContainer {
 	className?: string;
 	children: JSX.Element[] | JSX.Element;
 }
 
-const Card: React.FunctionComponent<ICard> = ({
+const Container: FunctionComponent<IContainer> = ({
 	className,
 	children,
 }): JSX.Element => {
 	return <div className={className}>{children}</div>;
 };
 
-export default Card;
+export default Container;

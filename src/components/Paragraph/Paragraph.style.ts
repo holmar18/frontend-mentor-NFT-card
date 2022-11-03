@@ -1,18 +1,12 @@
 import styled from 'styled-components';
 // Theme
 import { theme } from '../../theme';
+import Paragraph from './Paragraph';
 
-const CPrice = styled.h1`
-	color: white;
-	font-size: 1.4rem;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
-	cursor: pointer;
-
-	&:hover {
-		color: ${theme().color.primaryCyanFullOp};
-		opacity: 1;
-	}
+const StyledParagraph = styled(Paragraph)`
+	color: ${theme().color.darkGrey};
+	font-size: 1rem;
+	font-weight: 300;
 
 	@media (max-width: ${theme().screenSize.mobile}) {
 	}
@@ -24,4 +18,4 @@ const CPrice = styled.h1`
 	}
 `;
 
-export default CPrice;
+export default StyledParagraph;

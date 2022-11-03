@@ -1,21 +1,17 @@
 import styled from 'styled-components';
 // Theme
 import { theme } from '../../theme';
+import Image from './Image';
 
-const SImage = styled.div`
+const StyledImage = styled(Image)`
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
+	border-radius: 1rem;
 	cursor: pointer;
-
-	.nft-img {
-		display: block;
-		max-width: 100%;
-		max-height: 100%;
-		border-radius: 1rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	background-image: url(${(props) => props.src});
+	background-size: cover;
+	background-position: center;
 
 	.overlay {
 		display: none;
@@ -60,7 +56,7 @@ const SImage = styled.div`
 
 	@media (min-width: ${theme().screenSize.desktop}) {
 		height: 56%;
-	}
+	} ;
 `;
 
-export default SImage;
+export default StyledImage;

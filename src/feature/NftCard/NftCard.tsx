@@ -1,19 +1,51 @@
 import React from 'react';
 // Images
 import NFTETH from '../../assets/images/image-equilibrium.jpg';
+import CREATOR from '../../assets/images/image-avatar.png';
+// sVG
+import ETH from '../../assets/images/icon-ethereum.svg';
+import CLOCK from '../../assets/images/icon-clock.svg';
 // Components
-import { Card } from '../../components/Card';
-import { Image } from '../../components/Image';
+import { StyledCard } from '../../components/Card';
+import { StyledImage } from '../../components/Image';
 import { Title } from '../../components/Title';
-import { Paragraph } from '../../components/Paragraph';
+import { StyledParagraph } from '../../components/Paragraph';
+import { StyledIconText } from './components/IconText';
+import { StyledContainer } from '../../components/Container';
+import { StyledNftCreator } from './components/NftCreator';
+// THeme
+import { theme } from '../../theme';
+
 const NftCard = () => {
 	return (
 		<>
-			<Card>
-				<Image src={NFTETH} alt='Etherium NFT' />
+			<StyledCard>
+				<StyledImage src={NFTETH} alt='Etherium NFT' />
 				<Title text='Equilibrium #3429' />
-				<Paragraph text='Our Equilibrium collection promotes balance and calm' />
-			</Card>
+				<StyledParagraph text='Our Equilibrium collection promotes balance and calm' />
+				<StyledContainer
+					flexDirection='row'
+					alignItem='center'
+					justifyContent='center'
+					padding='1.5rem 0'
+					borderBottom={`2px solid ${theme().color.neutralDarkBlueLine}`}
+				>
+					<StyledIconText
+						icon={ETH}
+						text='0.041 ETH'
+						color={theme().color.primaryCyanFullOp}
+						weight={600}
+					/>
+					<StyledIconText
+						icon={CLOCK}
+						text='3 Days left'
+						color={theme().color.primarySoftBlue}
+						weight={300}
+						marginLeft={'auto'}
+					/>
+				</StyledContainer>
+				<StyledNftCreator creatorImg={CREATOR} name='Jules Wyvern' />
+			</StyledCard>
 		</>
 	);
 };

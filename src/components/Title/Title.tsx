@@ -1,5 +1,5 @@
 import React from 'react';
-import CTitle from './style';
+import CTitle from './Title.style';
 
 interface ITitle {
 	text: string;

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 // Theme
 import { theme } from '../../theme';
+import Card from './Card';
 
-const SCard = styled.div`
+const StyledCard = styled(Card)`
 	display: flex;
 	flex-direction: column;
 	background-color: ${theme().color.neutralDarkBlueCardBg};
@@ -11,13 +12,13 @@ const SCard = styled.div`
 	filter: drop-shadow(-7px 6px 14px #000);
 
 	@media (max-width: ${theme().screenSize.mobile}) {
-		height: 80vh;
+		height: 60vh;
 		max-width: 80vw;
-		min-width: 427px;
+		min-width: 227px;
 	}
 
 	@media (min-width: ${theme().screenSize.tablet}) {
-		height: 70vh;
+		height: 58vh;
 		width: 20rem;
 	}
 
@@ -27,4 +28,4 @@ const SCard = styled.div`
 	}
 `;
 
-export default SCard;
+export default StyledCard;

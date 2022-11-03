@@ -1,2 +1,2 @@
-import Card from './Card';
-export { Card };
+import StyledCard from './Card.style';
+export { StyledCard };

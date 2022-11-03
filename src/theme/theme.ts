@@ -13,6 +13,7 @@ interface Itheme {
 		neutralDarkBlueMainBg: string;
 		neutralDarkBlueCardBg: string;
 		neutralDarkBlueLine: string;
+		darkGrey: string;
 	};
 	screenSize: {
 		mobile: string;
@@ -38,6 +39,7 @@ const theme: Function = (): Itheme => {
 			neutralDarkBlueMainBg: '',
 			neutralDarkBlueCardBg: '',
 			neutralDarkBlueLine: '',
+			darkGrey: '',
 		},
 		screenSize: {
 			mobile: '610px',
@@ -54,7 +56,8 @@ const theme: Function = (): Itheme => {
 			primaryCyanFullOp: 'hsla(178, 100%, 50%, 1)',
 			neutralDarkBlueMainBg: 'hsl(217, 54%, 11%);',
 			neutralDarkBlueCardBg: 'hsl(216, 50%, 16%);',
-			neutralDarkBlueLine: 'hsl(216, 50%, 16%);',
+			neutralDarkBlueLine: 'hsl(215, 32%, 27%);',
+			darkGrey: 'rgba(124, 148, 152, 1)',
 		};
 	} else {
 		// Theme set to light.
@@ -64,7 +67,8 @@ const theme: Function = (): Itheme => {
 			primaryCyanFullOp: 'hsla(178, 100%, 50%, 1)',
 			neutralDarkBlueMainBg: 'red;',
 			neutralDarkBlueCardBg: 'hsl(216, 50%, 16%);',
-			neutralDarkBlueLine: 'hsl(216, 50%, 16%);',
+			neutralDarkBlueLine: 'hsl(215, 32%, 27%);',
+			darkGrey: 'rgba(124, 148, 152, 1)',
 		};
 	}
 
