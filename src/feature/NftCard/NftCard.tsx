@@ -8,7 +8,7 @@ import CLOCK from '../../assets/images/icon-clock.svg';
 // Components
 import { StyledCard } from '../../components/Card';
 import { StyledImage } from '../../components/Image';
-import { Title } from '../../components/Title';
+import { StyledTitle } from '../../components/Title';
 import { StyledParagraph } from '../../components/Paragraph';
 import { StyledIconText } from './components/IconText';
 import { StyledContainer } from '../../components/Container';
@@ -21,7 +21,7 @@ const NftCard = () => {
 		<>
 			<StyledCard>
 				<StyledImage src={NFTETH} alt='Etherium NFT' />
-				<Title text='Equilibrium #3429' />
+				<StyledTitle text='Equilibrium #3429' />
 				<StyledParagraph text='Our Equilibrium collection promotes balance and calm' />
 				<StyledContainer
 					flexDirection='row'

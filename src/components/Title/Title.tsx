@@ -1,12 +1,12 @@
-import React from 'react';
-import CTitle from './Title.style';
+import { FunctionComponent } from 'react';
 
 interface ITitle {
+	className?: string;
 	text: string;
 }
 
-const Title: React.FunctionComponent<ITitle> = ({ text }): JSX.Element => {
-	return <CTitle>{text}</CTitle>;
+const Title: FunctionComponent<ITitle> = ({ className, text }): JSX.Element => {
+	return <h1 className={className}>{text}</h1>;
 };
 
 export default Title;

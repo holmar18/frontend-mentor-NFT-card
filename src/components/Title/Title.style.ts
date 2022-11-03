@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 // Theme
 import { theme } from '../../theme';
+import Title from './Title';
 
-const CTitle = styled.h1`
-	color: white;
+const StyledTitle = styled(Title)`
+	color: ${theme().color.whiteBlack};
 	font-size: 1.4rem;
 	padding-top: 1.2rem;
 	padding-bottom: 1.2rem;
@@ -24,4 +25,4 @@ const CTitle = styled.h1`
 	}
 `;
 
-export default CTitle;
+export default StyledTitle;

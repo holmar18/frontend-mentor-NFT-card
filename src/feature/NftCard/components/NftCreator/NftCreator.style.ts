@@ -20,6 +20,7 @@ const StyledNftCreator = styled(NftCreator)<IStyledIconText>`
 		padding-left: 0.4rem;
 		color: white;
 		cursor: pointer;
+		color: ${theme().color.whiteBlack};
 
 		&:hover {
 			color: ${theme().color.primaryCyanFullOp};

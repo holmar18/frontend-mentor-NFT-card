@@ -20,6 +20,7 @@ const StyledIconText = styled(IconText)<IStyledIconText>`
 	img {
 		padding-right: 0.3rem;
 		margin-left: ${(props) => props.marginLeft};
+		color: ${theme().color.primaryCyanFullOp};
 	}
 
 	@media (max-width: ${theme().screenSize.mobile}) {

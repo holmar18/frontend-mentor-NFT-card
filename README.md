@@ -1,6 +1,7 @@
 # Frontend Mentor - NFT Card
 
 Practice using styled components for the first time.
+Card does have a light/dark dependant on system theme settings.
 
 ---
 
